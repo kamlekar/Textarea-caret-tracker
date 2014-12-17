@@ -1,60 +1,31 @@
-body {
-    font-family: Verdana;
-    font-size: 12px;
-    line-height: 14px;
+.caretTrackingTextarea, .textareaMirror {
+    position:absolute;
+    top:0;
+    left:0;
+    font:14px/1 monospace;
+    padding:5px;
+    border:1px solid #999;
+    white-space:pre;
+    margin:0;
+    background:transparent;
+    width:300px;
+    max-width:300px;
 }
-textarea, div {
-    font-family: Verdana;
-    font-size: 12px;
-    line-height: 14px;
-    width: 300px;
-    display: block;
-    overflow: hidden;
-    border: 1px solid black;
-    padding: 0;
-    margin: 0;
-    resize: none;
-    min-height: 300px;
-    position: absolute;
-    -moz-box-sizing: border-box;
-    white-space: pre-wrap;
+.caretTrackingTextarea {
+    z-index:2;
+    min-height:200px;
 }
-span {
-    display: inline-block;
-    height: 14px;
-    position: relative;
+.textareaMirror {
+    border-color:transparent;
 }
-span#caret {
-    display: inline;
+.textareaMirror span {
+    opacity:0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
-label {
-    display: block;
-    margin-left: 320px;
-}
-ul {
-    padding: 0px;
-    margin: 9px;
-    position: absolute;
-    z-index: 999;
-    border: 1px solid #000;
-    background-color: #FFF;
-    list-style-type:none;
-    display: none;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    span {
-        white-space: pre-wrap;
-    }
-}
-div {
-    /* Firefox wrapping fix */
-    -moz-padding-end: 1.5px;
-    -moz-padding-start: 1.5px;
-    /* IE8/IE9 wrapping fix */
-    padding-right: 5px\0/;
-    width: 295px\0/;
-}
-span#caret
-{
-    display: inline-block\0/;
+.textareaCaretTracker {
+    position:absolute;
+    width:4px;
+    height:4px;
+    background:#f00;
 }

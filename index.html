@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script type="text/javascript" src="plugins/jquery.js"></script>
-		
-
 		<link rel="stylesheet" href="main.css" type="text/css"/>
+		<script type="text/javascript" src="main.js"></script>
 	</head>
 	<body>
-		<div></div>
-		<textarea>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
-		<label></label>
-		<ul>
-		    <li>Why don't you type this..</li>
-		</ul>
-		<script type="text/javascript" src="plugins/rangyinput.js"></script>
-		<script type="text/javascript" src="plugins/rangy.js"></script>
-		<script type="text/javascript" src="main.js"></script>
+		<div id="main"></div>
+		<script>
+			var main = document.getElementById('main');
+			trackCaret(main);
+		</script>
 	</body>
 </html>
