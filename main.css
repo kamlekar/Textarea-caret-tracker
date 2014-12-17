@@ -1,0 +1,60 @@
+body {
+    font-family: Verdana;
+    font-size: 12px;
+    line-height: 14px;
+}
+textarea, div {
+    font-family: Verdana;
+    font-size: 12px;
+    line-height: 14px;
+    width: 300px;
+    display: block;
+    overflow: hidden;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+    resize: none;
+    min-height: 300px;
+    position: absolute;
+    -moz-box-sizing: border-box;
+    white-space: pre-wrap;
+}
+span {
+    display: inline-block;
+    height: 14px;
+    position: relative;
+}
+span#caret {
+    display: inline;
+}
+label {
+    display: block;
+    margin-left: 320px;
+}
+ul {
+    padding: 0px;
+    margin: 9px;
+    position: absolute;
+    z-index: 999;
+    border: 1px solid #000;
+    background-color: #FFF;
+    list-style-type:none;
+    display: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    span {
+        white-space: pre-wrap;
+    }
+}
+div {
+    /* Firefox wrapping fix */
+    -moz-padding-end: 1.5px;
+    -moz-padding-start: 1.5px;
+    /* IE8/IE9 wrapping fix */
+    padding-right: 5px\0/;
+    width: 295px\0/;
+}
+span#caret
+{
+    display: inline-block\0/;
+}
